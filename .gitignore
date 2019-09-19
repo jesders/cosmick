@@ -1,0 +1,7 @@
+*.retry
+aei-blog-ops
+wp-cli.phar
+*.log
+.vagrant
+Vagrantfile
+public_html/wp-config.php
