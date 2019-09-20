@@ -1,0 +1,35 @@
+%flex {
+    display:flex;
+}
+
+%flex-center {
+    @extend %flex;
+    align-items:center;
+}
+
+%flex-justify {
+    @extend %flex;
+    justify-content:space-between;
+}
+
+%flex-justify-center {
+    @extend %flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+%background-center {
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+%invisible {
+    opacity:0;
+    visibility:hidden;
+}
+
+%visible {
+    opacity:1;
+    visibility:visible;
+}

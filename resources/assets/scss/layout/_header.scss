@@ -1,3 +1,125 @@
 header {
-	
+    grid-area:header;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+    z-index:9999;
+    background-color:$white;
+
+    nav {
+        @extend %flex-center;
+        a {
+            display:block;
+            color:$dark-gray;
+            padding:20px 10px;
+            position:relative;
+
+            &:hover {
+                color:$secondary-color;
+
+                &::after {
+                    background-color:$secondary-color;
+                }
+            }
+
+            &::after {
+                content:'';
+                height:2px;
+                width:100%;
+                position:absolute;
+                bottom:0;
+                left:0;
+                background-color:transparent;
+            }
+        }
+    }
+
+    .logo {
+        a {
+            @extend %flex-center;
+        }
+
+        span {
+            @media screen and (max-width:768px) {
+                opacity:0;
+                visibility:hidden;
+            }
+
+            font-size:22px;
+            font-family:$secondary-font;
+            font-weight:300;
+            color:$secondary-color;
+        }
+
+        svg {
+            width:40px;
+            height:40px;
+            fill:$secondary-color;
+        }
+    }
+
+    .search {
+        @extend %invisible;
+        position:fixed;
+        top:15%;
+        left:0;
+        right:0;
+        z-index:9998;
+        transform:translateY(15px);
+
+        form {
+            max-width:85%;
+            margin:auto;
+        }
+
+        .close {
+            @extend %flex;
+            width:20px;
+            height:20px;
+            fill:$white;
+            margin-left:auto;
+            margin-bottom:15px;
+        }
+
+        .search-active & {
+            @extend %visible;
+            transform:translateY(0);
+        }
+    }
+
+    .shift {
+        @extend %flex-center;
+        @media screen and (max-width:768px) {
+            display:none;
+        }
+    }
+
+    .hamburger {
+        @media screen and (max-width:768px) {
+            display:block;
+        }
+
+        display:none;
+        padding:20px 0;
+        cursor:pointer;
+
+        div {
+            background-color:$secondary-color;
+            height:3px;
+            width:30px;
+            margin-top:3px;
+
+            &:first-child {
+                margin:0;
+            }
+        }
+        
+    }
+
+    .search-icon {
+        width:18px;
+        height:18px;
+        fill:$black
+    }
 }
+

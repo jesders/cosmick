@@ -1,0 +1,17 @@
+.button {
+    background-color:$secondary-color;
+    width:150px;
+    padding:15px;
+    margin-left:auto;
+    display:block;
+    line-height:1;
+    color:$white;
+    text-transform:uppercase;
+    border:none;
+    cursor:pointer;
+    text-align:center;
+
+    &:hover {
+        background-color:$primary-color;
+    }
+}

@@ -1,0 +1,20 @@
+input {
+    &:not([type="submit"]),
+    &[type="date"] {
+        -webkit-appearance: none;
+        border-radius:none;
+        width:100%;
+        min-height:45px;
+        padding:5px 10px;
+        margin-bottom:10px;
+    }
+    
+    &[type="date"] {
+        &:not(.has-value){
+            &::before{ 
+                color:lightgray;
+                content:attr(placeholder);
+            }
+        }
+    }
+}

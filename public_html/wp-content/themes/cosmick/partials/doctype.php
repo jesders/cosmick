@@ -6,12 +6,12 @@
 <link type="image/png" rel="icon" href="/wp-content/themes/cosmick/assets/img/icons/favicon.png" />
 
 <!-- Slick -->
-<!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/> -->
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
 
 <!-- CSS -->
 <link type="text/css" rel="stylesheet" href="/wp-content/themes/cosmick/assets/css/app.css" />
 
-<!-- <link rel="canonical" href="https://cosmick.jesders.com"> -->
-<title><?php wp_title('') ?></title>
+<link rel="canonical" href="https://cosmick.jesders.com">
+<title>Cosmick Cruises | Home</title>
 <?php wp_head(); ?>

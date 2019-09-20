@@ -1,1 +1,28 @@
+.contain {
+    max-width:1600px;
+    margin:auto;
 
+    .row {
+        @extend %flex-justify-center;
+        align-items:center;
+        margin-left:30px;
+        margin-right:30px;
+    }
+
+    .block {
+        flex:0 0 auto;
+    }
+
+    &-full {
+        max-width:100%;
+    }
+}
+
+.search-active,
+.drawer-active {
+    overflow:hidden;
+
+    &::after {
+        @extend %visible;
+    }
+}
