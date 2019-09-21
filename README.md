@@ -9,7 +9,7 @@ ___
   - Header w/custom navigation.
   - Cruise themed.
   - Searchbar available when clicking icon in header.
-  - Slider that autoplays with 4000ms delay between each slide.
+  - Slider that autoplays with 7000ms delay between each slide.
   - Custom loading screen w/animation.
   - Custom form implented. Since I didn't have access to gravity forms, I only did the front-end implementation.
   - Custom theme implementation.
