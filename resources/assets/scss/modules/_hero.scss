@@ -1,46 +1,65 @@
-// ==========================================================================
-// Module / Banner
-// ==========================================================================
-.banner {
+/*
+|--------------------------------------------------------------------------
+| Modules / Hero
+|--------------------------------------------------------------------------
+|
+| Note: Notes will go here.
+|
+*/
+
+.hero {
+	grid-area:hero;
 	position:relative;
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size:cover;
-	height: 100vh;
-	max-height: 700px;
+	overflow:hidden;
 
-	&.short {
-		height: 138.78px;
-		padding: 0;
-		@include breakpoint (medium down) {
-			height: 116.77px;
-		}
-		@include breakpoint (small down) {
-			height: 85.66px;
-		}
+	.slide {
+		@extend %background-center;
+		height:75vh;
 
-		+ section {
-			h1 {
-				margin-top: 0;
-			}
-		}
-
-		&.scroll {
-			@include breakpoint (large up) {
-				height: 95px;
-			}
-			@include breakpoint (medium) {
-				height: 86px;
-			}
-			@include breakpoint (small) {
-				height: 69.84px;
-			}
+		&::after {
+			content:'';
+			position:absolute;
+			bottom:0;
+			left:0;
+			right:0;
+			top:0;
+			background-color:rgba($black, .25);
+			height:100%;
+			width:100%;
 		}
 	}
 
-	&::after {
-		content:'';
-		@include position(absolute,0,0,0,0);
-		background-color:rgba($black, .85);
+	.form {
+		@media screen and (max-width:768px) {
+			width:100%;
+		}
+
+		box-shadow:0px 0px 10px 2px rgba($black, .25);
+		padding:30px;
+		background-color:$white;
+		max-width:450px;
+
+		form {
+			@media screen and (max-width:768px) {
+				display:none;
+			}
+		}
+
+		.button {
+			@media screen and (max-width:768px) {
+				display:block;
+				margin-left:0;
+			}
+
+			display:none;
+		}
+	}
+
+	.contain {
+		position:absolute;
+		left:0;
+		right:0;
+		top:50%;
+		transform:translateY(-50%);
 	}
 }

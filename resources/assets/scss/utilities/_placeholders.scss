@@ -1,0 +1,44 @@
+/*
+|--------------------------------------------------------------------------
+| Utilities / Placeholders
+|--------------------------------------------------------------------------
+|
+| Note: Notes will go here.
+|
+*/
+
+%background-center {
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+%flex {
+    display:flex;
+}
+
+%flex-center {
+    @extend %flex;
+    align-items:center;
+}
+
+%flex-justify {
+    @extend %flex;
+    justify-content:space-between;
+}
+
+%flex-justify-center {
+    @extend %flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+%invisible {
+    opacity:0;
+    visibility:hidden;
+}
+
+%visible {
+    opacity:1;
+    visibility:visible;
+}

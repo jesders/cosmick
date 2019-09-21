@@ -5,3 +5,6 @@ wp-cli.phar
 .vagrant
 Vagrantfile
 public_html/wp-config.php
+node_modules
+fonts
+images

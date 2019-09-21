@@ -1,0 +1,26 @@
+/*
+|--------------------------------------------------------------------------
+| Modules / Button
+|--------------------------------------------------------------------------
+|
+| Note: Notes will go here.
+|
+*/
+
+.button {
+    display:block;
+    margin-left:auto;
+    padding:15px;
+    border:none;
+    background-color:$secondary-color;
+    color:$white;
+    line-height:1;
+    text-align:center;
+    text-transform:uppercase;
+    width:150px;
+    cursor:pointer;
+
+    &:hover {
+        background-color:$primary-color;
+    }
+}

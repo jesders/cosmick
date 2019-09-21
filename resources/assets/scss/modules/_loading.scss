@@ -1,0 +1,48 @@
+/*
+|--------------------------------------------------------------------------
+| Modules / Loading
+|--------------------------------------------------------------------------
+|
+| Note: Notes will go here.
+|
+*/
+
+.loading {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    z-index:10000;
+    background-color:rgba($white, .90);
+    height:100%;
+    width:100%;
+    transition-delay:1.5s;
+    
+    svg {
+        fill:$secondary-color;
+        height:15%;
+        width:15%;
+        animation:growShrink ease 2s infinite;
+        perspective:5%;
+    }
+
+    .ready & {
+        @extend %invisible;
+    }
+}
+
+@keyframes growShrink {
+    0% {
+        transform:scale(1) translate3d(0, 5px, 0);
+    }
+    50% {
+        transform:scale(1.05) translate3d(0,-5px,10px);
+    }
+    100% {
+        transform:scale(1) translate3d(0, 5px, 0);
+    }
+}

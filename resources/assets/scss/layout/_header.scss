@@ -1,3 +1,113 @@
+/*
+|--------------------------------------------------------------------------
+| Layout / Header
+|--------------------------------------------------------------------------
+|
+| Note: Notes will go here.
+|
+*/
+
 header {
-	
+    grid-area:header;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+    background-color:$white;
+    z-index:9999;
+
+    nav {
+        @extend %flex-center;
+
+        a {
+            position:relative;
+            display:block;
+            padding:20px 10px;
+            color:$dark-gray;
+
+            &:hover {
+                color:$secondary-color;
+
+                &::after {
+                    background-color:$secondary-color;
+                }
+            }
+
+            &::after {
+                content:'';
+                position:absolute;
+                bottom:0;
+                left:0;
+                background-color:transparent;
+                height:2px;
+                width:100%;
+            }
+        }
+    }
+
+    .logo {
+        a {
+            @extend %flex-center;
+        }
+
+        span {
+            @media screen and (max-width:768px) {
+                opacity:0;
+                visibility:hidden;
+            }
+
+            color:$secondary-color;
+            font-family:$secondary-font;
+            font-size:22px;
+            font-weight:300;
+        }
+
+        svg {
+            fill:$secondary-color;
+            width:40px;
+            height:40px;
+        }
+    }
+
+    .search {
+        @extend %invisible;
+        position:fixed;
+        left:0;
+        right:0;
+        top:15%;
+        transform:translateY(15px);
+        z-index:9998;
+
+        form {
+            margin:auto;
+            max-width:85%;
+        }
+
+        .close {
+            @extend %flex;
+            margin-bottom:15px;
+            margin-left:auto;
+            fill:$white;
+            height:20px;
+            width:20px;
+        }
+
+        .search-active & {
+            @extend %visible;
+            transform:translateY(0);
+        }
+
+        &-icon {
+            fill:$black;
+            height:18px;
+            width:18px;
+        }
+    }
+
+    .shift {
+        @extend %flex-center;
+        @media screen and (max-width:768px) {
+            display:none;
+        }
+    }
 }
+

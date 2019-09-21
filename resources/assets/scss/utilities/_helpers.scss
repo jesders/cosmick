@@ -1,1 +1,37 @@
+/*
+|--------------------------------------------------------------------------
+| Utilities / Helpers
+|--------------------------------------------------------------------------
+|
+| Note: Notes will go here.
+|
+*/
 
+.contain {
+    margin:auto;
+    max-width:1600px;
+
+    .block {
+        flex:0 0 auto;
+    }
+
+    .row {
+        @extend %flex-justify-center;
+        align-items:center;
+        margin-left:30px;
+        margin-right:30px;
+    }
+
+    &-full {
+        max-width:100%;
+    }
+}
+
+.drawer-active,
+.search-active {
+    overflow:hidden;
+
+    &::after {
+        @extend %visible;
+    }
+}

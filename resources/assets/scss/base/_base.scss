@@ -1,0 +1,62 @@
+/*
+|--------------------------------------------------------------------------
+| Base / Base
+|--------------------------------------------------------------------------
+|
+| Note: Notes will go here.
+|
+*/
+
+*,
+::before,
+::after {
+    box-sizing:border-box;
+    transition:all .35s ease;
+}
+
+html {
+    color:$medium-gray;
+    font-family:$primary-font;
+    font-size:16px;
+    line-height:1.55;
+
+    &::after {
+        @extend %invisible;
+        content:'';
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        background-color:rgba($black, .90);
+        height:100vh;
+        width:100vw;
+    }
+}
+
+main {
+    display:grid;
+    grid-template-areas:
+        'header'
+        'hero';
+}
+
+h2 {
+    font-size:30px;
+    margin-top:0;
+    margin-bottom:10px;
+    color:$black;
+    font-weight:700;
+}
+
+p {
+    margin-top:0;
+    margin-bottom:30px;
+    font-family:$secondary-font;
+    line-height:1.75;
+}
+
+a {
+    color:$medium-gray;
+    text-decoration:none;
+}
