@@ -1,6 +1,6 @@
 # Cosmick Cruises
-Website: [https://justinesders.com](https://justinesders.com)
-Github Repo: [https://github.com/jesders/cosmick](https://github.com/jesders/cosmick)
+Website: [https://justinesders.com](https://justinesders.com)<br>
+Github Repo: [https://github.com/jesders/cosmick](https://github.com/jesders/cosmick)<br>
 Pagespeed Score: [https://developers.google.com/speed/pagespeed/insights/?url=justinesders.com](https://developers.google.com/speed/pagespeed/insights/?url=justinesders.com)
 
 ___
@@ -29,7 +29,7 @@ ___
 #### Backend Features
   - Menu widget that automatically adds new pages to navigation bar on frontend.
   - Custom fields implemented (Advanced Custom Fields) for changing of slider images on front-end.
-  - Added select box for to show/hide slides.
+  - Added select box to show/hide slides.
   - No 3rd Party Platforms used.
   - Custom theme image.
 
