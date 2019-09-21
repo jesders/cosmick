@@ -1,15 +1,24 @@
+/*
+|--------------------------------------------------------------------------
+| Modules / Button
+|--------------------------------------------------------------------------
+|
+| Note: Notes will go here.
+|
+*/
+
 .button {
-    background-color:$secondary-color;
-    width:150px;
-    padding:15px;
-    margin-left:auto;
     display:block;
-    line-height:1;
-    color:$white;
-    text-transform:uppercase;
+    margin-left:auto;
+    padding:15px;
     border:none;
-    cursor:pointer;
+    background-color:$secondary-color;
+    color:$white;
+    line-height:1;
     text-align:center;
+    text-transform:uppercase;
+    width:150px;
+    cursor:pointer;
 
     &:hover {
         background-color:$primary-color;

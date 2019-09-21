@@ -1,0 +1,29 @@
+/*
+|--------------------------------------------------------------------------
+| Modules / Hamburger
+|--------------------------------------------------------------------------
+|
+| Note: Notes will go here.
+|
+*/
+
+.hamburger {
+    @media screen and (max-width:768px) {
+        display:block;
+    }
+
+    display:none;
+    padding:20px 0;
+    cursor:pointer;
+
+    div {
+        margin-top:3px;
+        background-color:$secondary-color;
+        height:3px;
+        width:30px;
+
+        &:first-child {
+            margin:0;
+        }
+    }
+}

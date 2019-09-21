@@ -12,6 +12,6 @@
 <!-- CSS -->
 <link type="text/css" rel="stylesheet" href="/wp-content/themes/cosmick/assets/css/app.css" />
 
-<link rel="canonical" href="https://cosmick.jesders.com">
+<link rel="canonical" href="https://justinesders.com">
 <title>Cosmick Cruises | Home</title>
 <?php wp_head(); ?>

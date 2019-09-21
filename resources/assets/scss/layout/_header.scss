@@ -1,18 +1,28 @@
+/*
+|--------------------------------------------------------------------------
+| Layout / Header
+|--------------------------------------------------------------------------
+|
+| Note: Notes will go here.
+|
+*/
+
 header {
     grid-area:header;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
     position:relative;
-    z-index:9999;
     background-color:$white;
+    z-index:9999;
 
     nav {
         @extend %flex-center;
+
         a {
-            display:block;
-            color:$dark-gray;
-            padding:20px 10px;
             position:relative;
+            display:block;
+            padding:20px 10px;
+            color:$dark-gray;
 
             &:hover {
                 color:$secondary-color;
@@ -24,12 +34,12 @@ header {
 
             &::after {
                 content:'';
-                height:2px;
-                width:100%;
                 position:absolute;
                 bottom:0;
                 left:0;
                 background-color:transparent;
+                height:2px;
+                width:100%;
             }
         }
     }
@@ -45,45 +55,51 @@ header {
                 visibility:hidden;
             }
 
-            font-size:22px;
-            font-family:$secondary-font;
-            font-weight:300;
             color:$secondary-color;
+            font-family:$secondary-font;
+            font-size:22px;
+            font-weight:300;
         }
 
         svg {
+            fill:$secondary-color;
             width:40px;
             height:40px;
-            fill:$secondary-color;
         }
     }
 
     .search {
         @extend %invisible;
         position:fixed;
-        top:15%;
         left:0;
         right:0;
-        z-index:9998;
+        top:15%;
         transform:translateY(15px);
+        z-index:9998;
 
         form {
-            max-width:85%;
             margin:auto;
+            max-width:85%;
         }
 
         .close {
             @extend %flex;
-            width:20px;
-            height:20px;
-            fill:$white;
-            margin-left:auto;
             margin-bottom:15px;
+            margin-left:auto;
+            fill:$white;
+            height:20px;
+            width:20px;
         }
 
         .search-active & {
             @extend %visible;
             transform:translateY(0);
+        }
+
+        &-icon {
+            fill:$black;
+            height:18px;
+            width:18px;
         }
     }
 
@@ -92,34 +108,6 @@ header {
         @media screen and (max-width:768px) {
             display:none;
         }
-    }
-
-    .hamburger {
-        @media screen and (max-width:768px) {
-            display:block;
-        }
-
-        display:none;
-        padding:20px 0;
-        cursor:pointer;
-
-        div {
-            background-color:$secondary-color;
-            height:3px;
-            width:30px;
-            margin-top:3px;
-
-            &:first-child {
-                margin:0;
-            }
-        }
-        
-    }
-
-    .search-icon {
-        width:18px;
-        height:18px;
-        fill:$black
     }
 }
 

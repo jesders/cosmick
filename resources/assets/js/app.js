@@ -18,3 +18,11 @@ $('.close').on('click', function() {
 $('.hamburger').on('click', function() {
     $('html').toggleClass('drawer-active');
 });
+
+// $(window).load(function() {
+//     console.log('loaded');
+// });
+
+$(window).ready(function() {
+    $('html').addClass('ready');
+});

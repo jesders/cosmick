@@ -1,19 +1,30 @@
+/*
+|--------------------------------------------------------------------------
+| Modules / Form
+|--------------------------------------------------------------------------
+|
+| Note: Notes will go here.
+|
+*/
+
 input {
     &:not([type="submit"]),
     &[type="date"] {
-        -webkit-appearance: none;
-        border-radius:none;
-        width:100%;
-        min-height:45px;
         padding:5px 10px;
         margin-bottom:10px;
+        border-radius:0;
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        min-height:45px;
+        width:100%;
     }
     
     &[type="date"] {
         &:not(.has-value){
             &::before{ 
-                color:lightgray;
                 content:attr(placeholder);
+                color:lightgray;
             }
         }
     }

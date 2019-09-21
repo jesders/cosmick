@@ -1,6 +1,19 @@
+/*
+|--------------------------------------------------------------------------
+| Utilities / Helpers
+|--------------------------------------------------------------------------
+|
+| Note: Notes will go here.
+|
+*/
+
 .contain {
-    max-width:1600px;
     margin:auto;
+    max-width:1600px;
+
+    .block {
+        flex:0 0 auto;
+    }
 
     .row {
         @extend %flex-justify-center;
@@ -9,17 +22,13 @@
         margin-right:30px;
     }
 
-    .block {
-        flex:0 0 auto;
-    }
-
     &-full {
         max-width:100%;
     }
 }
 
-.search-active,
-.drawer-active {
+.drawer-active,
+.search-active {
     overflow:hidden;
 
     &::after {
