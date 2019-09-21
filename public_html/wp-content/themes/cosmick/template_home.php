@@ -15,8 +15,8 @@ get_header();
             <div class="block form">
                 <?php the_field('form_text'); ?>
                 <form>
-                    <input type="date" placeholder="Start Date" name="start_date" onchange="this.className=(this.value!=''?'has-value':'')">
-                    <input type="date" placeholder="End Date" name="end_date" onchange="this.className=(this.value!=''?'has-value':'')">
+                    <input type="date" name="start_date">
+                    <input type="date" name="end_date">
                     <input type="number" name="number_passengers" placeholder="Number of Passengers" min="0" max="8">
                     <input type="submit" class="button" value="Submit">
                 </form>
