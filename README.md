@@ -16,9 +16,13 @@ ___
   - Google font implementation added to stylesheet. Using Ubuntu and Ubuntu Condensed.
   - Custom favicon.
   - Minimized CSS/JS. Unminified code in repo.
+  - Tested in Chrome, Firefox, and Safari.
   - Use of SMACSS to split up files into manageable pieces.
   - Commenting in place in SCSS files.
+  - Implemented custom homepage template.
   - Use of SCSS and laravel mix to compile files into final CSS and JS files.
+  - Optimized all images via TinyPNG.com
+  - Optimized all SVGs via SVGOMG.com
   - .htaccess rules set up for pagespeed and redirect to non-www and non-http addresses. Currently set up to go to https.
   - Cert Added - Secure Site.
 
